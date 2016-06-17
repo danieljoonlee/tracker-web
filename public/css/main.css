@@ -1,3 +1,8 @@
+/*
+Most styles are in-line to create modularity.  Check components for specific styles. 
+Depending on companies styles, can revert to mostly .css files or CSS preprocessors.
+*/
+
 body {
   font-family: "Roboto";
   color: #303030;
@@ -10,4 +15,8 @@ body {
   border-top: 5px solid #B8B8B8;
   border-bottom: 5px solid #B8B8B8;
   padding-bottom: 50px;
+}
+
+hr {
+  border-top: 1px solid #B8B8B8;
 }
