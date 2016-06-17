@@ -8,5 +8,5 @@ Feature: Create a Task
     Given I view the project
 
   Scenario: Creating a task starts in To Do
-    When I add a task 'Test Task'
-    Then I see the task 'Test Task' under 'To Do'
+    When I add a task 'Task #1'
+    Then I see the task 'Task #1' under 'To Do'
