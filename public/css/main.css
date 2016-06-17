@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto";
+  color: #303030;
+}
+
+#App {
+  margin: 3% auto;
+  width: 95%;
+  border: 1px solid #B8B8B8;
+  border-top: 5px solid #B8B8B8;
+  border-bottom: 5px solid #B8B8B8;
+  padding-bottom: 50px;
+}
