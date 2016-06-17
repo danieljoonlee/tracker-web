@@ -1,4 +1,6 @@
 Feature: Start a Task
+  User has a current task under To Do with the option to start task, which
+  moves the task into In Progress.
 
   Background:
     Given I view the project

@@ -20,4 +20,10 @@ module.exports = function () {
     let name = this.driver.findElement({ css: 'h6.' + state }).getText()
     return this.expect(name).to.eventually.have.string(text)
   })
+
+  this.Then(/^I complete the task 'Test Task' to update the charts$/, function (callback) {
+    // Write code here that turns the phrase above into concrete actions
+    callback(null, 'pending');
+  });
+
 }

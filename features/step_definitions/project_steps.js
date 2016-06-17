@@ -9,4 +9,5 @@ module.exports = function () {
     let header = this.driver.findElement({ css: 'h3' }).getText()
     return this.expect(header).to.eventually.equal(text)
   })
+
 }
