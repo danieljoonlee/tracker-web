@@ -9,4 +9,4 @@ Feature: Complete a task
 
   Scenario: Completing the In Progress task moves to Complete
     When I see the task 'Task #1' under 'In Progress'
-    Then I complete the task 'Task #1' to update the charts
+    Then I complete the task 'Task #1' under 'In Progress'

@@ -21,9 +21,8 @@ module.exports = function () {
     return this.expect(name).to.eventually.have.string(text)
   })
 
-  this.Then(/^I complete the task 'Test Task' to update the charts$/, function (callback) {
-    // Write code here that turns the phrase above into concrete actions
-    callback(null, 'pending');
+  this.Then(/^I complete the task '(.*)' under '(.*)'$/, function (text, heading) {
+    //Should either check for removed element && increment
   });
 
 }
