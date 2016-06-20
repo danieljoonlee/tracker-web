@@ -36,7 +36,6 @@ class TaskCharts extends Component {
   //Update on receiving new props from redux state
   componentWillReceiveProps(nextProps) {
     const tasks = nextProps.tasks;
-    console.log(tasks);
     const count = tasks.count;
     const complete = count === 0 ? 0 : tasks.complete / count;
     const inProgress = count === 0 ? 0 : tasks.inProgress / count;
@@ -55,15 +54,15 @@ class TaskCharts extends Component {
     return (
       <div className='d3-taskcharts row' style={{margin: 0}}>
         <div className='taskchart col-md-4' style={{...taskchart, textAlign: 'left !important', paddingLeft: '2.5%'}}>
-          <p style={pStyle}><span style={{...spanStyle, color: '#3EC556', paddingLeft: '5%'}}>{tasks.complete}</span> Complete</p>
+          <p style={pStyle}><span className='complete-count' style={{...spanStyle, color: '#3EC556', paddingLeft: '5%'}}>{tasks.complete}</span> Complete</p>
           <CompleteComponent data={this.state.completeData} />
         </div>
         <div className='taskchart col-md-4' style={taskchart}>
-          <p style={pStyle}><span style={{...spanStyle, color: '#3E74C5'}}>{tasks.inProgress}</span> In Progress</p>
+          <p style={pStyle}><span className='in-progress-count' style={{...spanStyle, color: '#3E74C5'}}>{tasks.inProgress}</span> In Progress</p>
           <InProgressComponent data={this.state.inProgressData} />
         </div>
         <div className='taskchart col-md-4' style={taskchart}>
-          <p style={{...pStyle, paddingRight: '12%'}}><span style={{...spanStyle, color: '#C53E3E'}}>{tasks.todo}</span> Todo</p>
+          <p style={{...pStyle, paddingRight: '12%'}}><span className='todo-count' style={{...spanStyle, color: '#C53E3E'}}>{tasks.todo}</span> Todo</p>
           <ToDoComponent data={this.state.toDoData} />
         </div>
       </div>

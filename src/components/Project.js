@@ -56,7 +56,6 @@ Project.propTypes = {
   completeTask: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
   tasks: PropTypes.shape({
     count: PropTypes.number.isRequired,
     todo: PropTypes.number.isRequired,

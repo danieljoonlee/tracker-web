@@ -1,4 +1,5 @@
 module.exports = function () {
+
   this.When(/^I add a task '(.*)'$/, function (name) {
     return this.driver
                .findElement({ css: 'input' })
@@ -21,8 +22,15 @@ module.exports = function () {
     return this.expect(name).to.eventually.have.string(text)
   })
 
-  this.Then(/^I complete the task '(.*)' under '(.*)'$/, function (text, heading) {
-    //Should either check for removed element && increment
-  });
+  this.When(/^Task is '(.*)' under '(.*)'$/, function (text, heading) {
+    return this.driver
+               .findElement({ css: '.in-progress-btn' }).click()
+  })
+
+  this.Then(/^'(.*)' should be '(.*)' in complete charts$/, function (heading, text) {
+    let state = heading.toLowerCase().split(' ').join('-')
+    let name = this.driver.findElement({ css: 'span.' + state }).getText()
+    return this.expect(name).to.eventually.have.string(text)
+  })
 
 }

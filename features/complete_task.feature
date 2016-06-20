@@ -8,5 +8,5 @@ Feature: Complete a task
     And I see the task 'Task #1' under 'In Progress'
 
   Scenario: Completing the In Progress task moves to Complete
-    When I see the task 'Task #1' under 'In Progress'
-    Then I complete the task 'Task #1' under 'In Progress'
+    When Task is 'In Progress Task #1' under 'In Progress'
+    Then 'Complete Count' should be '1' in complete charts

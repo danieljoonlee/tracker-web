@@ -8,4 +8,4 @@ Feature: Start a Task
 
   Scenario: Starting the task moves to In Progress
     When I start the task
-    Then I see the task 'Task #1' under 'In Progress'
+    Then I see the task 'In Progress Task #1' under 'In Progress'
