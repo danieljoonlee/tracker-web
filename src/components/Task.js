@@ -13,7 +13,7 @@ class Task extends Component {
 
     return (
       <div style={divStyle}>
-        <p className={state} style={pStyle}>{state === "in-progress" ? `In Progress ${name}` : `Todo ${name}`} {actionButton}</p>
+        <p style={pStyle}>{state === "in-progress" ? `In Progress ${name}` : `Todo ${name}`} {actionButton}</p>
         <span style={spanStyle}>{description}</span>
       </div>
     );
