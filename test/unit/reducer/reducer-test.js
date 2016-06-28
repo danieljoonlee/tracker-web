@@ -1,11 +1,9 @@
 import {assert, expect} from 'chai';
-import {shallow} from 'enzyme';
-import {App} from 'containers/App';
 import {addProject, addTask, startTask, completeTask} from 'actions/index';
 import reducer from 'reducers/projects';
 import initialState from 'initialState';
 
-describe('App', function() {
+describe('reducer', function() {
   
   it('handles ADD_PROJECT with initialState', () => {
     const state = reducer(initialState, 'ADD_PROJECT')
