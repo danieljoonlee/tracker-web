@@ -45,4 +45,12 @@ describe('Task', () => {
     expect(componentInProgress.find('p').text()).to.contain('In Progress');
   });
 
+  it('has correct button props if state is in "to do"', () => {
+    expect(componentToDo.find('button').props().children).to.equal('Start Task');
+  })
+
+  it('has correct button props if state is in "to do"', () => {
+    expect(componentInProgress.find('button').props().children).to.equal('Complete Task');
+  })
+
 });
