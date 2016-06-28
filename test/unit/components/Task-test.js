@@ -1,7 +1,6 @@
 import Task from 'components/Task';
 import {assert, expect} from 'chai';
 import {shallow} from 'enzyme';
-import reducer from 'reducers/projects';
 import initialState from 'initialState';
 import {addProject, addTask, startTask, completeTask} from 'actions/index';
 
