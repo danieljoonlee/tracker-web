@@ -25,6 +25,7 @@
     "babel-register": "^6.9.0",
     "chai": "^3.0.0",
     "chai-as-promised": "^5.3.0",
+    "chromedriver": "^2.21.2",
     "cucumber": "^1.0.0",
     "enzyme": "^2.2.0",
     "eslint": "^0.23.0",
@@ -45,8 +46,10 @@
     "webpack-dev-server": "^1.9.0"
   },
   "dependencies": {
+    "d3": "^3.5.17",
     "lodash": "^4.13.1",
     "react": "^15.0.1",
+    "react-d3-library": "^1.1.4",
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
