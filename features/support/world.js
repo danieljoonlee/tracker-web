@@ -2,6 +2,7 @@ require('babel-polyfill');
 var chai = require('chai');
 var webdriver = require('selenium-webdriver'),
     chrome = require('selenium-webdriver/chrome'),
+    path = require('chromedriver').path,
     firefox = require('selenium-webdriver/firefox');
 var driver = new webdriver.Builder()
                           .forBrowser('chrome')
