@@ -23,4 +23,12 @@ describe('Project', () => {
    expect(component.find('h1').text()).to.eql('Versus Todo List');
   });
 
+  it('renders a In Progress Tasks', () => {
+   expect(component.find('.in-progress').text()).to.eql('In Progress Tasks');
+  });
+
+  it('renders a Todo Tasks', () => {
+   expect(component.find('.to-do').text()).to.eql('Todo Tasks');
+  });
+
 });
